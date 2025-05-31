@@ -1,4 +1,0 @@
-{
-  "installDependencies": true,
-  "startCommand": "echo 'Run: npm run test-yarn (works) or npm run test-npm (fails)'"
-} 
