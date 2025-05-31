@@ -1,0 +1,23 @@
+{
+    "name": "api-docs",
+    "version": "0.0.0",
+    "private": true,
+    "description": "Test case to demonstrate yarn vs npm installation differences with Docusaurus OpenAPI plugin",
+    "scripts": {
+        "test-yarn": "npm run clean && npm run install-yarn && npm run build-yarn",
+        "test-npm": "npm run clean && npm run install-npm && npm run build-npm",
+        "clean": "rimraf my-website/node_modules my-website/yarn.lock my-website/package-lock.json",
+        "install-yarn": "cd my-website && yarn install",
+        "install-npm": "cd my-website && npm install",
+        "build-yarn": "cd my-website && yarn start",
+        "build-npm": "cd my-website && npm run start",
+        "serve": "cd my-website && npm run serve && cd .."
+    },
+    "devDependencies": {
+        "npm-run-all": "^4.1.5",
+        "rimraf": "^6.0.1"
+    },
+    "engines": {
+        "node": ">=18.0"
+    }
+}
